@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --bg-color: #fff;
+        --text-color: #000;
+    }
+    .dark{
+        --bg-color: #333;
+        --text-color: #fff;
+    }
+    body{
+        background: var(--bg-color);
+        color: var(--text-color);
+        transition: 0.5s;
+    }
+
+    button{
+        padding:10px 20px;
+        border-radius: 5px;
+
+    }
+</style>
+<body>
+    <h1>Theme Switcher</h1>
+<button onclick="toggleTheme()">
+     🌑 Change Theme 
+</button>
+<script>
+    function toggleTheme(){
+        document.body.classList.toggle("dark");
+    }
+</script>
+
+</body>
+</html>
